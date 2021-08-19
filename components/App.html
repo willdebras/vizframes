@@ -1,0 +1,58 @@
+<div class="flexBox">
+
+
+  <Frame height="100px" width="200px" />
+
+  <Frame height="150px" width="150px" />
+
+  <Frame height="180px" width="250px" />
+
+  <Frame height="100px" width="200px" />
+
+  <Frame height="190px" width="100px" />
+
+  <Frame height="170px" width="225px" />
+
+
+</div>
+
+
+<!-- Import the counter component! -->
+<script>
+  import Counter from './Counter.html';
+  import Frame from './Frame.html';
+
+  export default {
+    components: {
+      Counter,
+      Frame
+    }
+  };
+</script>
+
+<!-- Include styles -->
+<style>
+  h1,
+  h2 {
+    font-weight: 300;
+    font-family: Lato;
+  }
+
+  .logo-font {
+    text-transform: lowercase;
+    font-size: 2.5rem;
+    font-family: 'Rajdhani', sans-serif;
+    color: #aa1e1e;
+  }
+
+  .flexBox {
+    display: flex;
+    gap: 40px;
+    padding: 64px;
+    padding-right: 64px;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-around;
+    align-content: center;
+  }
+</style>
