@@ -2,23 +2,25 @@
   export default {
     data () {
       return {
-        height: "100px",
-        width: "200px",
-        bgstyle: "white"
+        height: "300px",
+        width: "450px",
+        bgstyle: "default",
+        src: null,
+        alt: "Will forgot to add alt text"
       };
     },
   };
 </script>
 
 <div {bgstyle} style="width:{width}; height:{height};">
-  <img src="https://www.w3schools.com/css/paris.jpg" alt="Mona Lisa" />
+  <img src={src} alt={alt} />
 </div>
 
 
 <style>
   div {
     border: 2px solid black;
-    background-color: #ddc;
+    /*background-color: #ddc;*/
     border: solid 20px #eee;
     border-bottom-color: #fff;
     border-left-color: #eee;
@@ -29,7 +31,7 @@
     box-sizing: border-box;
     text-align: center;
     position: relative;
-    padding: 20px;
+    padding: 15px;
   }
 
   div:before {
@@ -63,7 +65,7 @@
     border-top-color: #ccb;
     height: 100%;
     width: 100%;
-    max-width: 80%;
+    max-width: 100%;
     object-fit: contain;
     display: block;
     margin: auto;
