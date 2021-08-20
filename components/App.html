@@ -1,17 +1,11 @@
 <div class="flexBox">
 
-
-  <Frame height="100px" width="200px" />
-
-  <Frame height="150px" width="150px" />
-
-  <Frame height="180px" width="250px" />
-
-  <Frame height="100px" width="200px" />
-
-  <Frame height="190px" width="100px" />
-
-  <Frame height="170px" width="225px" />
+  <Frame height="350px" width="300px" bgstyle="white" />
+  <Frame height="190px" width="250px" bgstyle="green" />
+  <Frame height="300px" width="300px" />
+  <Frame height="200px" width="400px" />
+  <Frame height="400px" width="290px" />
+  <Frame height="150px" width="160px" />
 
 
 </div>
@@ -32,6 +26,10 @@
 
 <!-- Include styles -->
 <style>
+  :root {
+    background-color: #f4f5f2;
+  }
+
   h1,
   h2 {
     font-weight: 300;
@@ -47,12 +45,19 @@
 
   .flexBox {
     display: flex;
-    gap: 40px;
-    padding: 64px;
-    padding-right: 64px;
+    gap: 60px;
+    margin: 100px;
     flex-wrap: wrap;
-    align-items: stretch;
+    align-items: center;
     justify-content: space-around;
     align-content: center;
+  }
+
+  :global([bgstyle=white]) {
+    background-color: white;
+  }
+
+  :global([bgstyle=green]) {
+    background-color: green;
   }
 </style>
